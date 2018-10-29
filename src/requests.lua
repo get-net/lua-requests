@@ -35,7 +35,7 @@ function requests.HTTPTokenAuth(token)
 end
 
 --User facing function the make a request use Bearer Authentication
-function requests.HTTPBearerAuth(user, password)
+function requests.HTTPBearerAuth(token)
 	return {_type = "bearer", token = token}
 end
 
