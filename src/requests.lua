@@ -194,7 +194,7 @@ function _requests.create_header(request)
 		request.headers["Content-Type"]   = "application/x-www-form-urlencoded"
 	elseif request.json ~= "" then
 		request.headers["Content-Length"] = request.json:len()
-		request.headers["Content-Type"]   = "application/json"
+		request.headers["Content-Type"]   = request.headers["Content-Type"] or "application/json"
 	elseif request.form ~= "" then
 		request.headers["Content-Length"] = request.form:len()
 		request.headers["Content-Type"]   = _requests.format("multipart/form-data; boundary=%s", request.boundary)
