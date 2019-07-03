@@ -1,7 +1,7 @@
 package = "lua-requests"
 version = "1.2-2"
 source = {
-  url = "git://github.com/svchk/lua-requests"
+  url = "git://github.com/get-net/lua-requests"
 }
 description = {
   summary = "HTTP requests made easy! Support for HTTPS, Basic Auth, Digest Auth. HTTP response parsing has never been easier!",
@@ -10,7 +10,7 @@ description = {
     Currently HTTPS, Basic Authentication, and Digest Authentication are supported.
     Checkout the wiki on the github page for more details. Written in pure lua!
   ]],
-  homepage = "http://github.com/JakobGreen/lua-requests",
+  homepage = "http://github.com/get-net/lua-requests",
   license = "MIT"
 }
 dependencies = {
